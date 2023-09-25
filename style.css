@@ -42,11 +42,11 @@ main {
 }
 
 section {
-  background-color: #00FF00;
+  
 }
 
 aside {
-  background-color: #00FFFF;
+  
 }
 
 /*footer*/
@@ -200,6 +200,7 @@ footer .container .contact .info li a {
   }
   main {
     order: -1;
+    margin-top: 60px;
   }
   aside {
     flex-basis: 100px;
@@ -461,3 +462,6 @@ nav input{
   display: none;
 }
 
+#carouselExampleIndicators{
+  margin-top: 20px;
+}
