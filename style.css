@@ -178,18 +178,6 @@ footer .container .contact .info li a {
   }
 }
 
-@media (max-width: 450px) {
-  footer .container {
-    width: 100%;
-    display: flex; /* Alterado para flexbox */
-    justify-content: center; /* Centraliza os elementos horizontalmente */
-    flex-direction: column;
-    gap: 20px; /* Espaçamento entre os elementos */
-    flex-wrap: wrap; /* Envolve os elementos quando a tela é estreita */
-  }
-}
-
-
 
 /*footer*/
 
@@ -200,10 +188,23 @@ footer .container .contact .info li a {
   }
   main {
     order: -1;
-    margin-top: 60px;
   }
   aside {
     flex-basis: 100px;
+  }
+  footer .container 
+  {
+    width: 100%;
+    display: flex; /* Alterado para flexbox */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    flex-direction: column;
+    gap: 20px; /* Espaçamento entre os elementos */
+    flex-wrap: wrap; /* Envolve os elementos quando a tela é estreita */
+  }
+  .quadro
+  {
+    margin-top: 50px;
+    padding: 10px;
   }
 }
 
