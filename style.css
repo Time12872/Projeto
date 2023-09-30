@@ -159,7 +159,6 @@ footer .container .contact .info li a {
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
-
 @media (max-width: 991px) {
   footer {
     padding: 40px;
@@ -175,7 +174,7 @@ footer .container .contact .info li a {
 
   .copyrightText {
     padding: 20px 40px 30px;
-  }
+  } 
 }
 
 
@@ -228,6 +227,7 @@ nav .wrapper{
   justify-content: space-between;
 }
 .wrapper .logo a{
+  margin-right:15px ;
   color: #f2f2f2;
   font-size: 30px;
   font-weight: 600;
@@ -338,7 +338,7 @@ nav .wrapper{
   top: 10px;
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 1220px) {
   .wrapper .btn {
     display: block;
   }
@@ -370,6 +370,7 @@ nav .wrapper{
   }
   #menu-btn:checked ~ .nav-links{
     right: 0;
+    z-index: 2;
   }
   #menu-btn:checked ~ .btn.menu-btn{
     display: none;
@@ -457,13 +458,264 @@ nav .wrapper{
   }
   .content .row header{
     font-size: 19px;
-  }
+  }  
 }
+
 nav input{
-  display: none;
+  display: flex;
 }
 
 #carouselExampleIndicators{
   margin-top: 20px;
 }
 
+.search{
+  position: relative;
+  width: 450px;
+  height: 40px;
+  background: #fff;
+  border-radius: 60px;
+  transition: 0.5s;
+  box-shadow: 0 0 0 5px #242526;
+  overflow: hidden;
+  display: flex;
+}
+
+.search.active{
+  width: 360px;
+}
+
+.search .icone{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 40px;
+  background: #fff;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.search .icone::before{
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #242526;
+  border-radius: 50%;
+  transform: translate(-4px, -4px);
+}
+
+.search .icone::after{
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 12px;
+  background: #242526;
+  transform: translate(6px, 6px) rotate(315deg);
+}
+
+.search .inputsearch {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-left: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.search .inputsearch input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 10px 0;
+  margin-right: 40px; /* Adicione espaço para o ícone de limpar */
+}
+
+.clear {
+  position: absolute; /* Remova a posição absoluta */
+  right: 0; /* Remova o alinhamento à direita */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  height: 100%;
+  padding-right: 20px; /* Adicione algum espaço à direita do ícone */
+}
+
+.clear::before {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 15px;
+  background: #242526;
+  transform: rotate(45deg);
+}
+
+.clear::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 15px;
+  background: #242526;
+  transform: rotate(315deg);
+}
+.nav-links input[type="checkbox"] {
+  display: none;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+
+.embrulho {
+  margin-top: 30px;
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+}
+.embrulho i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 2.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+  z-index: 1;
+  margin-left: -2vh;
+}
+.embrulho i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.embrulho i:first-child{
+  left: -22px;
+}
+.embrulho i:last-child{
+  right: -22px;
+}
+
+.embrulho .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 5) - 16px); /* 5 cards por vez */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .foto) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 342px;
+  list-style: none;
+  background: rgba(255, 255, 255, 0.164);
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.carousel .card .foto {
+  background: #8B53FF;
+  height: 148px;
+  width: 148px;
+  border-radius: 50%;
+}
+.card .foto img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+.carousel .card span {
+  color: #6A6D78;
+  font-size: 1.31rem;
+}
+
+@media screen and (max-width: 900px) {
+  .embrulho .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .embrulho .carousel {
+    grid-auto-columns: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .embrulho{
+    margin-top: 20vh;
+  }
+  .carousel .card {
+      height: 200px; /* Ajuste conforme necessário */
+  }
+  .carousel .card .foto {
+      height: 100px; /* Ajuste conforme necessário */
+      width: 100px; /* Ajuste conforme necessário */
+  }
+  .card .foto img {
+      width: 90px; /* Ajuste conforme necessário */
+      height: 90px; /* Ajuste conforme necessário */
+  }
+  .embrulho i {
+      height: 30px; /* Ajuste conforme necessário */
+      width: 30px; /* Ajuste conforme necessário */
+  }
+  .embrulho .carousel {
+      grid-auto-columns: calc((100% / 2) - 9px); /* Ajuste conforme necessário */
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .embrulho i {
+        font-size: 1rem; /* Ajuste o tamanho do ícone */
+  }
+
+  .embrulho i:first-child {
+      left: 10px; /* Ajuste a posição, se necessário */
+  }
+
+  .embrulho i:last-child {
+      right: 10px; /* Ajuste a posição, se necessário */
+  }
+}
