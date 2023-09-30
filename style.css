@@ -38,7 +38,7 @@ section, aside {
 
 main {
   flex-grow: 1;
-  background-color: lightgray;
+  background-color: rgba(151, 150, 150, 0.274);
   padding: 10px;
 }
 
@@ -641,18 +641,19 @@ input[type="radio"] {
   justify-content: center;
   align-items: center;
 }
+
 .carousel .card {
   scroll-snap-align: start;
-  height: 342px;
+  height: 200px;
   list-style: none;
-  background: rgba(255, 255, 255, 0.164);
+  background: transparent;
   cursor: pointer;
   padding-bottom: 15px;
   flex-direction: column;
   border-radius: 8px;
 }
 .carousel .card .foto {
-  background: #8B53FF;
+  background: transparent;
   height: 140px;
   width: 140px;
   border-radius: 50%;
@@ -666,8 +667,8 @@ input[type="radio"] {
 }
 .carousel .card h2 {
   font-weight: 500;
-  font-size: 1.56rem;
-  margin: 30px 0 5px;
+  font-size: 1rem;
+  margin: 5px 0 5px;
 }
 .carousel .card span {
   color: #6A6D78;
@@ -722,4 +723,113 @@ input[type="radio"] {
   .embrulho i:last-child {
       right: 10px; /* Ajuste a posição, se necessário */
   }
+}
+
+
+/*
+.container{
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.header{
+  width: 100%;
+  text-align: center;
+}
+
+.header h1{
+  font-size: 4em;
+  text-transform: uppercase;
+  color: red;
+}
+
+.products{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.product{
+  position: absolute;
+  background-color: green;
+  width: 350px;
+  height: 100%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0,.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 20px 40px;
+  border-radius: 10px;
+  transition: .3s;
+}
+
+.product:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 5px 10px rgba(0, 0,0,.2);
+}
+
+.image{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  place-items: center;
+}
+
+.image img{
+  width: 240px;
+}
+
+.namePrice{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.namePrice h3{
+  font-size: 2em;
+  text-transform: capitalize;
+  color: blue;
+}
+
+.namePrice span{
+  font-size: 1.5em;
+  color: orange;
+}
+
+.product p{
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.stars svg{
+  font-size: 1.3em;
+  color: purple;
+}
+
+.buy{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.buy button{
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: none;
+  background-color: aqua;
+  color: white;
+  font-size: 18px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.buy button:hover{
+  transform: scale(1.1);
 }
