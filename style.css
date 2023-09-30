@@ -39,6 +39,7 @@ section, aside {
 main {
   flex-grow: 1;
   background-color: lightgray;
+  padding: 10px;
 }
 
 section {
@@ -200,11 +201,7 @@ footer .container .contact .info li a {
     gap: 20px; /* Espaçamento entre os elementos */
     flex-wrap: wrap; /* Envolve os elementos quando a tela é estreita */
   }
-  .quadro
-  {
-    margin-top: 50px;
-    padding: 10px;
-  }
+
 }
 
 
@@ -466,7 +463,7 @@ nav input{
 }
 
 #carouselExampleIndicators{
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .search{
@@ -581,7 +578,12 @@ input[type="radio"] {
   max-width: 1100px;
   width: 100%;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centralizar horizontalmente */
 }
+
+
 .embrulho i {
   top: 50%;
   height: 50px;
@@ -595,16 +597,18 @@ input[type="radio"] {
   transform: translateY(-50%);
   transition: transform 0.1s linear;
   z-index: 1;
-  margin-left: -2vh;
 }
-.embrulho i:active{
+
+.embrulho i:active {
   transform: translateY(-50%) scale(0.85);
 }
-.embrulho i:first-child{
-  left: -22px;
+
+.embrulho i:first-child {
+  left: -10px; /* Ajustado para centralizar */
 }
-.embrulho i:last-child{
-  right: -22px;
+
+.embrulho i:last-child {
+  right: 10px; /* Ajustado para centralizar */
 }
 
 .embrulho .carousel {
@@ -649,8 +653,8 @@ input[type="radio"] {
 }
 .carousel .card .foto {
   background: #8B53FF;
-  height: 148px;
-  width: 148px;
+  height: 140px;
+  width: 140px;
   border-radius: 50%;
 }
 .card .foto img {
@@ -684,7 +688,7 @@ input[type="radio"] {
 
 @media (max-width: 450px) {
   .embrulho{
-    margin-top: 20vh;
+    margin-top: 9vh;
   }
   .carousel .card {
       height: 200px; /* Ajuste conforme necessário */
