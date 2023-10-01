@@ -41,6 +41,7 @@ main {
   background-color: rgba(199, 198, 198, 0.274);
 }
 
+
 section {
   
 }
@@ -73,11 +74,12 @@ footer .container {
   flex-wrap: wrap; /* Envolve os elementos quando a tela é estreita */
 }
 
-footer .container .sec h2 {
+footer .container .sec .h2-footer {
   position: relative;
   color: white;
   font-weight: 600;
   margin-bottom: 15px;
+  font-size: 1.5rem;
 }
 
 footer .container .sec p {
@@ -129,7 +131,7 @@ footer .container .quicklinks ul li a {
   display: inline-block;
 }
 
-footer .container .contact .info {
+footer .container .contact .info{
   position: relative;
 }
 
@@ -207,7 +209,6 @@ footer .container .contact .info li a {
   }
 
 }
-
 
 nav{
   position: fixed;

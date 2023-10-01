@@ -50,8 +50,6 @@ aside {
   
 }
 
-/*footer*/
-
 /* Footer */
 footer {
   background-color: #242526;
@@ -59,24 +57,32 @@ footer {
   height: auto;
   width: 100%;
   padding: 50px 100px;
-  display: flex; /* Alterado para flexbox */
-  flex-direction: column; /* Empilhamento vertical dos elementos */
-  align-items: center; /* Alinhar os elementos horizontalmente */
-  justify-content: center; /* Alinhar os elementos verticalmente */
+  display: flex;
+  /* Alterado para flexbox */
+  flex-direction: column;
+  /* Empilhamento vertical dos elementos */
+  align-items: center;
+  /* Alinhar os elementos horizontalmente */
+  justify-content: center;
+  /* Alinhar os elementos verticalmente */
 }
 
 footer .container {
   max-width: 1300px;
   width: 100%;
-  display: flex; /* Alterado para flexbox */
-  justify-content: space-between; /* Espaço uniforme entre os elementos */
-  gap: 20px; /* Espaçamento entre os elementos */
-  flex-wrap: wrap; /* Envolve os elementos quando a tela é estreita */
+  display: flex;
+  /* Alterado para flexbox */
+  justify-content: space-between;
+  /* Espaço uniforme entre os elementos */
+  gap: 20px;
+  /* Espaçamento entre os elementos */
+  flex-wrap: wrap;
+  /* Envolve os elementos quando a tela é estreita */
 }
 
 footer .container .sec h2 {
   position: relative;
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -87,8 +93,10 @@ footer .container .sec p {
 
 footer .container .sci {
   margin-top: 20px;
-  display: flex; /* Alterado para flexbox */
-  gap: 20px; /* Espaçamento entre os elementos */
+  display: flex;
+  /* Alterado para flexbox */
+  gap: 20px;
+  /* Espaçamento entre os elementos */
 }
 
 footer .container .sci li {
@@ -96,9 +104,12 @@ footer .container .sci li {
 }
 
 footer .container .sci li a {
-  display: flex; /* Alterado para flexbox */
-  align-items: center; /* Alinhar o conteúdo verticalmente */
-  justify-content: center; /* Alinhar o conteúdo horizontalmente */
+  display: flex;
+  /* Alterado para flexbox */
+  align-items: center;
+  /* Alinhar o conteúdo verticalmente */
+  justify-content: center;
+  /* Alinhar o conteúdo horizontalmente */
   width: 36px;
   height: 36px;
   background-color: #fff;
@@ -135,9 +146,12 @@ footer .container .contact .info {
 }
 
 footer .container .contact .info li {
-  display: flex; /* Alterado para flexbox */
-  gap: 20px; /* Espaçamento entre os elementos */
-  align-items: center; /* Alinhar o conteúdo verticalmente */
+  display: flex;
+  /* Alterado para flexbox */
+  gap: 20px;
+  /* Espaçamento entre os elementos */
+  align-items: center;
+  /* Alinhar o conteúdo verticalmente */
   margin-bottom: 16px;
 }
 
@@ -160,6 +174,7 @@ footer .container .contact .info li a {
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
+
 @media (max-width: 991px) {
   footer {
     padding: 40px;
@@ -167,15 +182,19 @@ footer .container .contact .info li a {
 
   footer .container {
     width: 100%;
-    display: flex; /* Alterado para flexbox */
-    justify-content: space-between; /* Espaço uniforme entre os elementos */
-    gap: 20px; /* Espaçamento entre os elementos */
-    flex-wrap: wrap; /* Envolve os elementos quando a tela é estreita */
+    display: flex;
+    /* Alterado para flexbox */
+    justify-content: space-between;
+    /* Espaço uniforme entre os elementos */
+    gap: 20px;
+    /* Espaçamento entre os elementos */
+    flex-wrap: wrap;
+    /* Envolve os elementos quando a tela é estreita */
   }
 
   .copyrightText {
     padding: 20px 40px 30px;
-  } 
+  }
 }
 
 
@@ -184,23 +203,45 @@ footer .container .contact .info li a {
 @media (max-width: 450px) {
   .conteudo {
     flex-direction: column;
-    margin-top: 0; 
+    margin-top: 0;
   }
+
   main {
     order: -1;
+    padding-top: 70px;
+    text-align: center;
   }
+
+  .linha{
+    margin-bottom: -20px;
+  }
+
+  #linhajr{
+    margin-bottom: -60px;
+  }
+
+  .quadro{
+    margin-top: -60px;
+  }
+
   aside {
     flex-basis: 100px;
   }
-  footer .container 
-  {
+
+  footer .container {
     width: 100%;
-    display: flex; /* Alterado para flexbox */
-    justify-content: center; /* Centraliza os elementos horizontalmente */
+    display: flex;
+    /* Alterado para flexbox */
+    justify-content: center;
+    /* Centraliza os elementos horizontalmente */
     flex-direction: column;
-    gap: 20px; /* Espaçamento entre os elementos */
-    flex-wrap: wrap; /* Envolve os elementos quando a tela é estreita */
+    gap: 20px;
+    /* Espaçamento entre os elementos */
+    flex-wrap: wrap;
+    /* Envolve os elementos quando a tela é estreita */
   }
+
+}
   .caixa
   {
     margin-top: 60px;
@@ -209,10 +250,11 @@ footer .container .contact .info li a {
 
   .aga1{
     margin-top: 0;
+    margin-bottom: 15px;
   }
 
 
-}
+
 
 
 nav{
