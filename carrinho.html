@@ -13,7 +13,13 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+        <script async src=//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script> <script>(adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-1438670738267328",
+            enable_page_level_ads: true
+       });</script> <script async src=//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script> <script>(adsbygoogle = window.adsbygoogle || []).push({ google_ad_client: "ca-pub-1438670738267328", enable_page_level_ads: true });</script>  <title>Responsive Shopping Cart | Webdevtrick.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="canonical" href="https://webdevtrick.com/responsive-shopping-cart-page/" />
+    <link rel="icon" href="bola.webp" type="image/png" sizes="16x16">
 </head>
 
 <body>
@@ -98,11 +104,66 @@
             <section>Menu</section>
             <main>
 
+                <div class="caixa">
+                <h1 class="aga1">Carrinho de Compras</h1>
+
+                <div class="shopping-cart">
                 
-
-
-
-
+                  <div class="column-labels">
+                    <label class="product-image">Image</label>
+                    <label class="product-details">Product</label>
+                    <label class="product-price">Preço</label>
+                    <label class="product-quantity">Quantidade</label>
+                    <label class="product-removal">Remove</label>
+                    <label class="product-line-price">Total</label>
+                  </div>
+                
+                
+                  <div class="product">
+                    <div class="product-image">
+                      <img src="imgprodutos/arruela.png">
+                    </div>
+                    <div class="product-details">
+                      <div class="product-title">Arruela</div>
+                      <p class="product-description">Contém 360 pcs/8 tamanhos das arruelas de aço inoxidável ( M2 M2.5 M3 M4
+                        M5 M6 M8 M10)</p>
+                    </div>
+                    <div class="product-price">80.00</div>
+                    <div class="product-quantity">
+                      <input type="number" value="1" min="1">
+                    </div>
+                    <div class="product-removal">
+                      <button class="remove-product">
+                        Remove
+                      </button>
+                    </div>
+                    <div class="product-line-price">80.00</div>
+                  </div>
+                
+                  <div class="totals">
+                    <div class="totals-item">
+                      <label>SubTotal</label>
+                      <div class="totals-value" id="cart-subtotal">80.00</div>
+                    </div>
+                    <div class="totals-item">
+                      <label>Tax (5%)</label>
+                      <div class="totals-value" id="cart-tax">4.00</div>
+                    </div>
+                    <div class="totals-item">
+                      <label>Envio</label>
+                      <div class="totals-value" id="cart-shipping">15.00</div>
+                    </div>
+                    <div class="totals-item totals-item-total">
+                      <label>Valor Total</label>
+                      <div class="totals-value" id="cart-total">99.99</div>
+                    </div>
+                  </div>
+                      
+                      <button class="checkout">Finalizar Compra</button>
+                
+                </div>
+            </div>
+                
             </main>
             <aside>Secundário</aside>
         </div>
@@ -170,7 +231,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="arruela.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="carrinho.js"></script>
 </body>
 
 </html>
