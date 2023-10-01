@@ -8,9 +8,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body {
+#bodi {
   margin: 0;
   padding: 0;
+  background-color: rgba(199, 198, 198, 0.274);
 }
 
 .layout {
@@ -39,7 +40,7 @@ aside {
 
 main {
   flex-grow: 1;
-  background-color: rgba(151, 150, 150, 0.274);
+  
   padding: 10px;
 }
 
@@ -207,6 +208,20 @@ footer .container .contact .info li a {
 
   main {
     order: -1;
+    padding-top: 70px;
+    text-align: center;
+  }
+
+  .linha{
+    margin-bottom: -20px;
+  }
+
+  #linhajr{
+    margin-bottom: -60px;
+  }
+
+  .quadro{
+    margin-top: -60px;
   }
 
   aside {
@@ -228,7 +243,9 @@ footer .container .contact .info li a {
 
 }
 
-
+.quadro{
+  margin-bottom: -30px;
+}
 nav {
   position: fixed;
   z-index: 99;
@@ -531,7 +548,7 @@ nav input {
 }
 
 #carouselExampleIndicators {
-  margin-top: 15px;
+  margin-top: 85px;
 }
 
 .search {
@@ -736,7 +753,7 @@ input[type="radio"] {
 }
 
 .carousel .card .foto {
-  background: transparent;
+  background: linear-gradient(180deg, rgba(29, 174, 185, 0.596),white);
   height: 140px;
   width: 140px;
   border-radius: 50%;
@@ -747,7 +764,6 @@ input[type="radio"] {
   height: 140px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #fff;
 }
 
 .carousel .card h2 {
@@ -923,7 +939,6 @@ input[type="radio"] {
   position: absolute;
   top: 24px;
   left: 24px;
-
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -1053,11 +1068,25 @@ input[type="radio"] {
 }
 
 main h1 {
-  font-size: 30px;
-  margin: 20px;
-  margin-bottom: -20px;
+  font-size: 40px;
+  margin: 90px 25px 10px;
+  font-weight: 300;
+  color: #000;
+  
 }
 
+main h6 {
+  font-size: 40px;
+  margin: 20px 25px 10px;
+  font-weight: 300;
+  color: #000;
+  
+}
+.linha{
+  height: 1px;
+  width: 100%;
+  background-color: #969292b2;
+}
 .card-body p{
   color: black;
   font-weight: 900;
@@ -1074,50 +1103,3 @@ main h1 {
 }
 
 
-label {
-  display: inline-block;
-  align-items: center;
-  /* gap: 14px; */
-  padding: 10px 15px 10px 10px;
-  cursor: pointer;
-  user-select: none;
-  border-radius: 10px;
-  color: black;
- }
-
- .fav{
-  display: inline-block;
-  gap: 5px;
- }
- 
- input {
-  display: none;
- }
- 
- input:checked + label svg {
-  fill: hsl(0deg 100% 50%);
-  stroke: hsl(0deg 100% 50%);
-  animation: heartButton 1s;
- }
- 
- @keyframes heartButton {
-  0% {
-   transform: scale(1);
-  }
- 
-  25% {
-   transform: scale(1.3);
-  }
- 
-  50% {
-   transform: scale(1);
-  }
- 
-  75% {
-   transform: scale(1.3);
-  }
- 
-  100% {
-   transform: scale(1);
-  }
- }
