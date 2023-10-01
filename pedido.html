@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+  <link rel="stylesheet" href="pedido.css">
+  <title>Pedidos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://unpkg.com/tailwindcss@1.2.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav>
+    <div class="wrapper">
+      <div class="logo"><a href="#">Logo</a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+
+      <div class="search">
+        <div class="icone"></div>
+        <div class="inputsearch">
+          <input type="text" placeholder="Search" id="mysearch">
+        </div>
+        <span class="clear" onclick="document.getElementById('mysearch').value = ''"></span>
+      </div>
+
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="carrinho.html">Carrinho</a></li>
+        <li>
+          <a href="#" class="desktop-item">Conta</a>
+          <input type="checkbox" id="showDrop">
+          <label for="showDrop" class="mobile-item">Conta</label>
+          <ul class="drop-menu">
+            <li><a href="#">Favoritos</a></li>
+            <li><a href="#">Meus Pedidos  </a></li>
+          </ul>
+        </li>
+        <li><a href="#">Sobre Nós</a></li>
+        <li><a href="#">Configurações</a></li>
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+
+  <div class="layout">
+    <div class="conteudo">
+      <section>Menu</section>
+      <main>
+
+
+
+
+
+
+        <div class="container">
+            <p class="h2-titulo"><span>Meus Pedidos</span></p>
+            <hr class="title-hr" />
+            <div class="search-wrap">
+                <input type="text" class="buscar-pedido" placeholder="Procurar" />
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+            <div class="row wrap-pedidos">
+                <div class="pedidoDiv">
+                    
+                    <br><br>
+        
+                    
+                    <div class="tagPedido">
+                        <div class="statusPedido andamento">Enviado</div>
+                        <div class="infoPedido">05/10/2023 | Pedido: v841012mrcy-01</div>
+                        <div class="rastreioPedido">Nº Rastreamento: PG987123765BR</div>
+                    </div>
+        
+                    <div class="tagControl">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="pedido">
+                            <h2>Compra realizada em 05/10/2023</h2>
+                            <a class="btn" href="javascript:void(0);">Pedir Novamente</a>
+                            <hr />
+                            <div class="span4">
+                                <span class="section-info-title">Forma de Pagamento</span>
+                                <div class="payment-method-info">
+                                    Cartão de crédito com final 0000<br /> R$ 200,00 (à vista)
+                                </div>
+                            </div>
+                            <div class="span4">
+                                <span class="section-info-title">Endereço de Entrega</span>
+                                <div class="shipping-address">
+                                    Gabriel Feitosa<br /> Rua Nove de Julho, 1333 APT 94 - Jardim Santa Helena<br /> Suzano/ SP - Brasil<br /> 08674-230
+                                    <br />
+                                </div>
+                            </div>
+                            <div class="span4 total-info">
+                                <span class="section-info-title">Total</span>
+                                <div class="totals">
+                                    <table>
+                                        <tr>
+                                            <td>Subtotal</td>
+                                            <td>R$ 300,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Desconto</td>
+                                            <td>- R$ 100,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Entrega</td>
+                                            <td>Grátis</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total</td>
+                                            <td>R$ 200,00</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="span9 order-details">
+                                <span class="section-info-title">Codigo Produto: v1067202mrcy-01</span>
+                                <p class="seller-info">Forma de entrega: <span class="sla-name">Correios</span><span class="seller-provided"> [fornecido por "xyz"]</span></p>
+                                <div class="showTrackingInfo">
+                                    <a href="javascript:void(0);" class="btn">exibir código de rastreio</a>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <p class="pull-right">
+                                    <!-- <span class="order-status">Enviado</span> -->
+                                </p>
+        
+        <style>
+        
+        
+        </style>
+                                <img class="foto" src="https://m.media-amazon.com/images/I/5169UxaYbmL._AC_UF1000,1000_QL80_.jpg" height="100" width="100">
+        
+        
+        
+                            </div>
+                            <hr />
+                        </div>
+                    </div>
+                </div>
+                <div class="pedidoDiv">
+                    <div class="tagPedido">
+                        <div class="statusPedido cancelado">Cancelado</div>
+                        <div class="infoPedido">04/10/2023 | Pedido: v841012mrcy-01</div>
+                    </div>
+        
+                    <div class="tagControl">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="pedido">
+                            <h2>Compra realizada em 04/10/2023</h2>
+                            <a class="btn" href="javascript:void(0);">Pedir Novamente</a>
+                            <hr />
+                            <div class="span4">
+                                <span class="section-info-title">Forma de Pagamento</span>
+                                <div class="payment-method-info">
+                                    Cartão de crédito com final 0001<br /> R$ 500,00 (2x parcelado)
+                                </div>
+                            </div>
+                            <div class="span4">
+                                <span class="section-info-title">Endereço de Entrega</span>
+                                <div class="shipping-address">
+                                    Gabriel Feitosa<br /> Rua Nove de Julho, 1333 APT 94 - Jardim Santa Helena<br /> Suzano/ SP - Brasil<br /> 08674-230
+                                    <br />
+                                </div>
+                            </div>
+                            <div class="span4 total-info">
+                                <span class="section-info-title">Total</span>
+                                <div class="totals">
+                                    <table>
+                                        <tr>
+                                            <td>Subtotal</td>
+                                            <td>R$ 650,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Desconto</td>
+                                            <td>- R$ 100,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Entrega</td>
+                                            <td>R$ 50,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total</td>
+                                            <td>R$ 500,00</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="span9 order-details">
+                                <span class="section-info-title">Codigo Produto: v1067202mrcy-01</span>
+                                <p class="seller-info">Forma de entrega: <span class="sla-name">Correios</span><span class="seller-provided"> [fornecido por "xyz"]</span></p>
+                                <div class="showTrackingInfo">
+                                    <a href="javascript:void(0);" class="btn">exibir código de rastreio</a>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <p class="pull-right">
+                                    <!-- <span class="order-status">Enviado</span> -->
+                                </p>
+        
+                                <img class="foto" src="https://static3.tcdn.com.br/img/img_prod/659062/parachoque_dianteiro_golf_2008_2009_2010_2011_2012_sem_furo_35033_2_4abc38d6a22f77e6efd3f23097ea2b89_20230522144353.jpg" height="100" width="100">
+        
+                            </div>
+                            <hr />
+                        </div>
+                    </div>
+                </div>
+                <div class="pedidoDiv">
+                    <div class="tagPedido">
+                        <div class="statusPedido concluido">Concluido</div>
+                        <div class="infoPedido">03/10/2023 | Pedido: v841012mrcy-01</div>
+                    </div>
+        
+                    <div class="tagControl">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="pedido">
+                            <h2>Compra realizada em 03/10/2023</h2>
+                            <a class="btn" href="javascript:void(0);">Pedir Novamente</a>
+                            <hr />
+                            <div class="span4">
+                                <span class="section-info-title">Forma de Pagamento</span>
+                                <div class="payment-method-info">
+                                    Cartão de crédito com final 0000<br /> R$ 200,00 (à vista)
+                                </div>
+                            </div>
+                            <div class="span4">
+                                <span class="section-info-title">Endereço de Entrega</span>
+                                <div class="shipping-address">
+                                    Gabriel Feitosa<br /> Rua Nove de Julho, 1333 APT 94 - Jardim Santa Helena<br /> Suzano/ SP - Brasil<br /> 08674-230
+                                    <br />
+                                </div>
+                            </div>
+                            <div class="span4 total-info">
+                                <span class="section-info-title">Total</span>
+                                <div class="totals">
+                                    <table>
+                                        <tr>
+                                            <td>Subtotal</td>
+                                            <td>R$ 250,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Desconto</td>
+                                            <td>- R$ 50,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Entrega</td>
+                                            <td>Grátis</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total</td>
+                                            <td>R$ 200,00</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="span9 order-details">
+                                <span class="section-info-title">Codigo Produto: v1067202mrcy-01</span>
+                                <p class="seller-info">Forma de entrega: <span class="sla-name">Correios</span><span class="seller-provided"> [fornecido por "xyz"]</span></p>
+                                <div class="showTrackingInfo">
+                                    <a href="javascript:void(0);" class="btn">exibir código de rastreio</a>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <p class="pull-right">
+                                    <!-- <span class="order-status">Enviado</span> -->
+                                </p>
+        
+                                <img class="foto" src="https://marquinhom.vteximg.com.br/arquivos/ids/199371-1000-1000/37551000_zoom1.jpg?v=637429672202170000" height="100" width="100">
+        
+                            </div>
+                            <hr />
+                        </div>
+                    </div>
+                </div>
+                <div class="pedidoDiv">
+                    <div class="tagPedido">
+                        <div class="statusPedido concluido">Concluido</div>
+                        <div class="infoPedido">02/10/2023 | Pedido: v841012mrcy-01</div>
+                    </div>
+        
+                    <div class="tagControl">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="pedido">
+                            <h2>Compra realizada em 02/10/2023</h2>
+                            <a class="btn" href="javascript:void(0);">Pedir Novamente</a>
+                            <hr />
+                            <div class="span4">
+                                <span class="section-info-title">Forma de Pagamento</span>
+                                <div class="payment-method-info">
+                                    Cartão de crédito com final 0000<br /> R$ 350,00 (à vista)
+                                </div>
+                            </div>
+                            <div class="span4">
+                                <span class="section-info-title">Endereço de Entrega</span>
+                                <div class="shipping-address">
+                                    Gabriel Feitosa<br /> Rua Nove de Julho, 1333 APT 94 - Jardim Santa Helena<br /> Suzano/ SP - Brasil<br /> 08674-230
+                                    <br />
+                                </div>
+                            </div>
+                            <div class="span4 total-info">
+                                <span class="section-info-title">Total</span>
+                                <div class="totals">
+                                    <table>
+                                        <tr>
+                                            <td>Subtotal</td>
+                                            <td>R$ 400,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Desconto</td>
+                                            <td>- R$ 50,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Entrega</td>
+                                            <td>Grátis</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total</td>
+                                            <td>R$ 350,00</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="span9 order-details">
+                                <span class="section-info-title">Codigo Produto: v1067202mrcy-01</span>
+                                <p class="seller-info">Forma de entrega: <span class="sla-name">Correios</span><span class="seller-provided"> [fornecido por "xyz"]</span></p>
+                                <div class="showTrackingInfo">
+                                    <a href="javascript:void(0);" class="btn">exibir código de rastreio</a>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <p class="pull-right">
+                                    <!-- <span class="order-status">Enviado</span> -->
+                                </p>
+        
+                                <img class="foto" src="https://images.tcdn.com.br/img/img_prod/130804/escape_ponteira_aluminio_dore_curva_em_inox_fazer_150_azul_yamaha_19237_1_20220411112618.jpg" height="100" width="100">
+        
+                            </div>
+                            <hr />
+                        </div>
+                    </div>
+                </div>
+                <div class="pedidoDiv">
+                    <div class="tagPedido">
+                        <div class="statusPedido concluido">Concluido</div>
+                        <div class="infoPedido">01/10/2023 | Pedido: v841012mrcy-01</div>
+                    </div>
+        
+                    <div class="tagControl">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="pedido">
+                            <h2>Compra realizada em 01/10/2023</h2>
+                            <a class="btn" href="javascript:void(0);">Pedir Novamente</a>
+                            <hr />
+                            <div class="span4">
+                                <span class="section-info-title">Forma de Pagamento</span>
+                                <div class="payment-method-info">
+                                    Cartão de crédito com final 0000<br /> R$ 145,12 (à vista)
+                                </div>
+                            </div>
+                            <div class="span4">
+                                <span class="section-info-title">Endereço de Entrega</span>
+                                <div class="shipping-address">
+                                    Gabriel Feitosa<br /> Rua Nove de Julho, 1333 APT 94 - Jardim Santa Helena<br /> Suzano/ SP - Brasil<br /> 08674-230
+                                    <br />
+                                </div>
+                            </div>
+                            <div class="span4 total-info">
+                                <span class="section-info-title">Total</span>
+                                <div class="totals">
+                                    <table>
+                                        <tr>
+                                            <td>Subtotal</td>
+                                            <td>R$ 145,12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Desconto</td>
+                                            <td>- R$ 98,12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Entrega</td>
+                                            <td>Grátis</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total</td>
+                                            <td>R$ 145,12</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="span9 order-details">
+                                <span class="section-info-title">Codigo Produto: v1067202mrcy-01</span>
+                                <p class="seller-info">Forma de entrega: <span class="sla-name">Correios</span><span class="seller-provided"> [fornecido por "xyz"]</span></p>
+                                <div class="showTrackingInfo">
+                                    <a href="javascript:void(0);" class="btn">exibir código de rastreio</a>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <p class="pull-right">
+                                    <!-- <span class="order-status">Enviado</span> -->
+                                </p>
+        
+                                <img class="foto" src="https://images.tcdn.com.br/img/img_prod/727136/escapamento_para_fan_2010_2012_9_1_d6cf05362b0ba7e691141eb8a7ad4599.jpg" height="100" width="100">
+        
+                            </div>
+                            <hr />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- partial -->
+          <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./script.js"></script>
+          <br><br><br>
+
+
+
+        
+      </main>
+      <aside>Secundário</aside>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="sec aboutus">
+        <h2>Sobre Nós</h2>
+        <ul class="sci">
+          <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="sec quicklinks">
+        <h2>Suporte</h2>
+        <ul>
+          <li><a href="#">Termos de uso</a></li>
+          <li><a href="#">Política de privacidade</a></li>
+        </ul>
+      </div>
+      <div class="sec quicklinks">
+        <h2>Perfil</h2>
+        <ul>
+          <li><a href="#">Cliente</a></li>
+          <li><a href="#">Vendedor</a></li>
+        </ul>
+      </div>
+      <div class="sec contact">
+        <h2>Contatos</h2>
+        <ul class="info">
+          <li>
+            <span><i class="fa-solid fa-phone"></i></span>
+            <p><a href="#">+55 (13)99105-9269</a></p>
+          </li>
+          <li>
+            <span><i class="fa-solid fa-envelope"></i></i></span>
+            <p><a href="#">empresadesenvolvemais@gmail.com</a></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="copyrightText">
+    <p>Copyright © 2023</p>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="pedido.js"></script>
+</body>
+
+</html>
