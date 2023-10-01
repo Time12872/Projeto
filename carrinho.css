@@ -201,14 +201,14 @@ footer .container .contact .info li a {
     gap: 20px; /* Espaçamento entre os elementos */
     flex-wrap: wrap; /* Envolve os elementos quando a tela é estreita */
   }
-  .quadro
+  .caixa
   {
-    margin-top: 50px;
+    margin-top: 60px;
     padding: 10px;
   }
 
   .aga1{
-    margin-top: 70px;
+    margin-top: 0;
   }
 
   .product-line-price{
@@ -707,12 +707,7 @@ button:active {
     content: '$';
   }
   
-  /* Body/Header stuff */
-  body {
-    padding: 0px 30px 30px 20px;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 100;
-  }
+
   
   .aga1 {
     font-weight: 900;
