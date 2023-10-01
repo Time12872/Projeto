@@ -573,265 +573,70 @@ input[type="radio"] {
 }
 
 
-.container-gallery {
-    position: relative;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: flex;
-  }
-  
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
-    cursor: pointer;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* Container for image text */
-  .caption-container {
-    text-align: center;
-    background-color: #222;
-height: 1px;
-margin-bottom: 15px;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Six columns side by side */
-  .column {
-    float: left;
-    width: 16.66%;
-  }
-  
-  /* Add a transparency effect for thumnbail images */
-  .demo {
-    opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
-
-  .direcao{
-
-  }
-
-  .container-gallery{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    
-  }
-.mySlides{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 22%;
+/* CSS used here will be applied after bootstrap.css */
+.carousel-meu {
+  margin-top: 20px;
 }
-
-.box-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 40%;
-    height: 700px;
-    /* background-color: red; */
-    
-}
-
-.quadro{
-    display: flex;
-    width: 100%;
-    height: auto;
-    /* background-color: green; */
-}
-
-.descricao{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 60%;
-    height: auto;
-    /* background-color: aqua; */
-}
-
-.informacoes-produto{
-    width: 95%;
-    height: 95%;
-    /* background-color: gray; */
-    padding: 15px;
-} 
-
-#nome-produto{
-    font-size: 1.7rem;
-    color: black;
-}
-
-.checked {
-  color: rgba(212, 212, 24, 0.726);
-}
-
-span{
+.item .thumb {
+width: 25%;
 cursor: pointer;
+float: left;
+}
+.item .thumb img {
+width: 100%;
+margin: 2px;
+}
+.item img {
+width: 100%;	
 }
 
-.avaliacao-produto{
-  width: 20%;
-  display: flex;
-  flex-direction: row;
-  cursor: pointer;
-}
-
-#precosemdesc{
-  font-size: 1rem;
-  color: red;
-}
-
-#precocomdesc {
+.precocomdesc {
   font-size: 2rem;
   color: black;
+  font-weight: 700;
+  margin-right: 10px;
 }
 
-.preco {
+.desconto {
   display: flex;
   flex-direction: row;
-  align-items: center; /* Alinhe verticalmente os elementos */
-}
-
-#desc-off {
-  color: rgb(20, 185, 20);
-  margin-left: 10px; /* Adicione um espaçamento à esquerda */
+  align-items: center;
+  color: rgba(0, 223, 0, 0.836);
   font-weight: 700;
 }
 
-.informacoes{
-  margin-top: 20px;
-  width: 100%;
-  height: auto;
-  /* background-color: orange; */
+.desconto p {
+  margin: 0; /* Remove a margem padrão do parágrafo */
 }
 
-.informacoes p {
-  color: rgb(20, 185, 20);
-  font-weight: 600;
-}
-
-.descricao-produto p{
-  margin-top: 30px;
-  color: black;
-  text-align: justify;
-  font-size: 1rem;
+.botaoadd{
+  margin-top: 50px;
+  color: #000000;
 }
 
 button {
-  appearance: none;
-  background-color: black;
-  border: 0.125em solid #1A1A1A;
-  border-radius: 0.9375em;
-  box-sizing: border-box;
-  color: white;
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
   cursor: pointer;
-  display: inline-block;
-  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  font-weight: 600;
-  line-height: normal;
-  margin: 0;
-  min-height: 3.75em;
-  min-width: 0;
   outline: none;
-  padding: 1em 2.3em;
-  text-align: center;
-  text-decoration: none;
-  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  will-change: transform;
- }
- 
- button:disabled {
-  pointer-events: none;
- }
- 
- button:hover {
-  color: black;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-  transform: translateY(-5px);
- }
- 
- button:active {
-  box-shadow: none;
-  transform: translateY(0);
- }
-
- .botaodeaddcarrinho{
-  display: flex;
-  justify-content: end;
- }
-
- main h1{
-  display: flex;
-  justify-content: center;
-  font-size: 4rem;
-  color: black;
-  margin-top: 50px;
- }
-
- .linhahorizontal{
-  height: 1px;
-  width: auto;
-  background-color: black;
- }
-
- .linhavertical{
-  width: 1px;
-  height: 600px;
-  background-color: black;
 }
 
+button:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
