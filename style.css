@@ -827,6 +827,34 @@ input[type="radio"] {
   }
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+
+:root {
+    --font1: 'Heebo', sans-serif;
+    --font2: 'Fira Sans Extra Condensed', sans-serif;
+    --font3: 'Roboto', sans-serif;
+
+    --btnbg: red;
+    --btnfontcolor: rgb(61, 61, 61);
+    --btnfontcolorhover: rgb(255, 255, 255);
+    --btnbghover: #ffc116;
+    --btnactivefs: rgb(241, 195, 46);
+
+
+    --label-index: red;
+    --danger-index: #ff0000;
+/* PAGINATE */
+    --link-color: #000;
+    --link-color-hover: #fff;
+    --bg-content-color: #ffcc00;
+
+}
+
+
+
 .container-fluid {
   max-width: 1400px;
 
@@ -834,7 +862,6 @@ input[type="radio"] {
 
 .card {
   background: #fff;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, 0.774);
   transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
   border: 0;
   border-radius: 1rem;
@@ -873,7 +900,7 @@ input[type="radio"] {
 
 
 .card:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
 }
 
@@ -882,7 +909,7 @@ input[type="radio"] {
   position: absolute;
   background-color: var(--label-index);
   color: #fff;
-  background-color: red;
+  /* background-color: red; */
   top: 8px;
   right: 8px;
   padding: 5px 10px 5px 10px;
@@ -902,7 +929,7 @@ input[type="radio"] {
   border-radius: 50%;
   font-size: 1rem;
   font-weight: 900;
-  background: #8bc34a;
+  background: #4a7ac3;
   line-height: 90px;
   text-align: center;
   color: white;
@@ -1036,3 +1063,61 @@ main h1 {
   font-weight: 900;
   font-size: 1em;
 }
+
+.preco-produto{
+  width: 80px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  display: inline-block;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+
+label {
+  display: inline-block;
+  align-items: center;
+  /* gap: 14px; */
+  padding: 10px 15px 10px 10px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 10px;
+  color: black;
+ }
+
+ .fav{
+  display: inline-block;
+  gap: 5px;
+ }
+ 
+ input {
+  display: none;
+ }
+ 
+ input:checked + label svg {
+  fill: hsl(0deg 100% 50%);
+  stroke: hsl(0deg 100% 50%);
+  animation: heartButton 1s;
+ }
+ 
+ @keyframes heartButton {
+  0% {
+   transform: scale(1);
+  }
+ 
+  25% {
+   transform: scale(1.3);
+  }
+ 
+  50% {
+   transform: scale(1);
+  }
+ 
+  75% {
+   transform: scale(1.3);
+  }
+ 
+  100% {
+   transform: scale(1);
+  }
+ }
