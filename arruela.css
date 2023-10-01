@@ -640,3 +640,9 @@ button:hover {
 button:active {
   transform: translateY(-1px);
 }
+
+.c-image{
+  border: 10px solid black;
+  height: 100px;
+  cursor: wait;
+}
