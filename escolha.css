@@ -26,7 +26,7 @@ body {
     margin-bottom: 20px; /* Adicionado margem para separar do conteúdo abaixo */
     font-size: 24px;
     font-weight: bold;
-    color: #3498db;
+    color: #242526;
 }
 
 .content {
@@ -90,13 +90,19 @@ body {
     margin-top: 1rem;
   }
   .btn-primary {
-    background-color: #3498db;
-    border: 1px solid #fff;
-    transition: background-color .5s;
+   
+    background-color: #FFC107; /* Trocando a cor verde por azul */
+
+    border: 1px solid #242526; /* Trocando a cor verde por azul */
+
+    transition:.5s;
+
+    color: #000;
+
   }
   .btn-primary:hover {
     background-color: #fff;
-    color: #3498db; 
+    color: #FFC107; 
     border: 1px solid black;
   }
     
