@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 110vh;
-    background-color: #ecf0f1;
+    background-color: #6967673a;
 }
 .content {
     background-color: #fff;
@@ -22,12 +22,12 @@ body {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    border: 0px solid #000; /*contorno 0px*/
+    border: 0px solid #3b3a3a; /*contorno 0px*/
 }
 .content::before {
     content: "";
     position: absolute;
-    background-color: #3498db; /* Trocando a cor verde por azul */
+    background-color: #242526; /* Trocando a cor verde por azul */
     width: 40%;
     height: 100%;
     border-top-left-radius: 15px;
@@ -41,9 +41,10 @@ body {
 }
 .title-primary {
     color: #fff;
+    font-weight: 800;
 }
 .title-second {
-    color: #3498db; /* Trocando a cor verde por azul */
+    color: #242526; /* Trocando a cor verde por azul */
 }
 .description {
     font-size: 14px;
@@ -52,6 +53,7 @@ body {
 }
 .description-primary {
     color: #fff;
+    font-weight: 300;
 }
 .description-second {
     color: #7f8c8d;
@@ -61,7 +63,7 @@ body {
     text-transform: uppercase;
     color: #fff;
     font-size: 10px;
-    padding: 10px 50px;
+    padding: 10px 10px;
     cursor: pointer;
     font-weight: bold;
     width: 150px;
@@ -71,22 +73,27 @@ body {
 }
 .btn-primary {
     background-color: transparent;
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
     transition: background-color .5s;
 }
 .btn-primary:hover {
+    color: #000000; /* Trocando a cor verde por azul */
+    transform: scale(1.2);
     background-color: #fff;
-    color: #3498db; /* Trocando a cor verde por azul */
 }
 .btn-second {
-    background-color: #3498db; /* Trocando a cor verde por azul */
-    border: 1px solid #3498db; /* Trocando a cor verde por azul */
-    transition: background-color .5s;
+    background-color: #FFC107; /* Trocando a cor verde por azul */
+    border: 1px solid #242526; /* Trocando a cor verde por azul */
+    transition:.5s;
+    color: #000;
+    
 }
 .btn-second:hover {
-    background-color: #fff;
-    border: 1px solid #3498db; /* Trocando a cor verde por azul */
-    color: #3498db; /* Trocando a cor verde por azul */
+    background-color: #E0A800;
+    border: 1px solid #242526; /* Trocando a cor verde por azul */
+    color: #242526; /* Trocando a cor verde por azul */
+    transform: scale(1.2);
+    color: #000;
 }
 .first-content {
     display: flex;
@@ -115,22 +122,22 @@ body {
     transition: background-color .5s;
 }
 .link-social-media:hover .item-social-media{
-    background-color: #3498db;
+    background-color: #242526;
     color: #fff;
-    border-color: #3498db;
+    border-color: #242526;
 }
 .list-social-media {
     display: flex;
     list-style-type: none;
 }
 .item-social-media {
-    border: 1px solid #bdc3c7;
+    border: 1px solid #000000;
     border-radius: 50%;
     width: 35px;
     height: 35px;
     line-height: 35px;
     text-align: center;
-    color: #95a5a6;
+    color: #000000;
 }
 .form {
     display: flex;
@@ -139,9 +146,10 @@ body {
 }
 .form input {
     height: 45px;
-    width: 100%;
+    width: 90%;
     border: none;
     background-color: #ecf0f1;
+    border-radius: 20px;
 }
 .input {
     line-height: 28px;
@@ -179,6 +187,7 @@ input:-webkit-autofill
     display: flex;
     align-items: center;
     margin: 8px;
+    border-radius: 20px;
 }
 .icon-modify {
     color: #7f8c8d;
