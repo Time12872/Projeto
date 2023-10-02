@@ -76,3 +76,4 @@ function removeItem(removeButton)
     recalculateCart();
   });
 }
+

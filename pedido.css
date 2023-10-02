@@ -1123,3 +1123,21 @@ display:flex;
 justify-content: end
 
 }
+
+
+.logo img{
+  width: 100px;
+  height: 60px;
+  margin-top: 8vh;
+  background-color: white;
+    border-radius: 50px;
+}
+
+@media (max-width: 450px){
+  .logo img{
+    width: 30vh;
+    margin-left: -2vh;
+    /* background-color: white;
+    border-radius: 50; */
+  }
+}

@@ -641,3 +641,20 @@ button:hover {
 button:active {
   transform: translateY(-1px);
 }
+
+
+.logo img{
+  width: 100px;
+  height: 60px;
+  background-color: white;
+    border-radius: 50px;
+}
+
+@media (max-width: 450px){
+  .logo img{
+    width: 30vh;
+    margin-left: -2vh;
+    /* background-color: white;
+    border-radius: 50; */
+  }
+}

@@ -753,7 +753,7 @@ input[type="radio"] {
 }
 
 .carousel .card .foto {
-  background: linear-gradient(180deg, rgba(29, 174, 185, 0.596),transparent);
+  background: linear-gradient(180deg, rgba(29, 174, 185, 0.596),white);
   height: 140px;
   width: 140px;
   border-radius: 50%;
@@ -1102,4 +1102,19 @@ main h6 {
   border-radius: 8px;
 }
 
+.logo img{
+  width: 100px;
+  height: 60px;
+  margin-top: 8vh;
+  background-color: white;
+    border-radius: 50px;
+}
 
+@media (max-width: 450px){
+  .logo img{
+    width: 30vh;
+    margin-left: -2vh;
+    /* background-color: white;
+    border-radius: 50; */
+  }
+}

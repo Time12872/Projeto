@@ -842,3 +842,17 @@ input[type="radio"] {
     /* Ajuste a posição, se necessário */
   }
 }
+
+.logo img{
+  width: 13vh;
+  height: auto;
+  margin-top: 9vh;
+}
+
+@media (max-width: 450px){
+  .logo img{
+    width: 30vh;
+    margin-left: -2vh;
+    margin-top: 12vh;
+  }
+}
