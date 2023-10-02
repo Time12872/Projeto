@@ -753,7 +753,7 @@ input[type="radio"] {
 }
 
 .carousel .card .foto {
-  background: linear-gradient(180deg, rgba(29, 174, 185, 0.596),white);
+  background: linear-gradient(180deg, rgba(29, 174, 185, 0.596),transparent);
   height: 140px;
   width: 140px;
   border-radius: 50%;
