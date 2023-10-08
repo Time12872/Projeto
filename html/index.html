@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <title>Tela Inicial</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -20,7 +20,7 @@
 
   <nav>
     <div class="wrapper">
-      <div class="logo"><a href="index.html"><img src="imgprodutos/logo.png"></a></a></div>
+      <div class="logo"><a href="/html/index.html"><img src="/imgprodutos/logo.png"></a></a></div>
       <input type="radio" name="slider" id="menu-btn">
       <input type="radio" name="slider" id="close-btn">
 
@@ -34,19 +34,23 @@
 
       <ul class="nav-links">
         <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="carrinho.html">Carrinho</a></li>
+        <li><a href="/html/index.html">Início</a></li>
+        <li><a href="/html/carrinho.html">Carrinho</a></li>
         <li>
           <a href="#" class="desktop-item">Conta</a>
           <input type="checkbox" id="showDrop">
           <label for="showDrop" class="mobile-item">Conta</label>
           <ul class="drop-menu">
             <li><a href="#">Favoritos</a></li>
-            <li><a href="pedido.html">Meus Pedidos  </a></li>
+            <li><a href="/html/pedido.html">Meus Pedidos </a></li>
           </ul>
         </li>
         <li><a href="#">Sobre Nós</a></li>
-        <li><a href="#">Configurações</a></li>
+        <div class="icones">
+          <span><a href=""><i class="ms-1 fa-solid fa-cart-shopping fa-lg" style="color: #ffffff;" data-tooltip="Carrinho de Compras"></i></a></span>
+          <span><a href=""><i class="ms-3 fa-solid fa-user fa-lg" style="color: #ffffff;" data-tooltip="Usuário"></i></a></span>
+          <span><a href=""><i class="ms-3 fa-solid fa-screwdriver-wrench fa-lg" style="color: #ffffff;" data-tooltip="Ferramentas"></i></a></span>          
+        </div>
       </ul>
       <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
     </div>
@@ -66,58 +70,59 @@
             <i id="left" class="fa-solid fa-angle-left"></i>
             <ul class="carousel">
               <li class="card border-0">
-                <div class="foto"><img src="imgtopicoscarousel/escapamento moto.png" alt="img" draggable="false"></div>
+                <div class="foto"><img src="/imgtopicoscarousel/escapamento moto.png" alt="img" draggable="false"></div>
                 <h2>Escapamento Moto</h2>
                 <span></span>
               </li>
               <li class="card border-0">
-                <div class="foto"><img src="imgtopicoscarousel/cambio aut.png" alt="img" draggable="false"></div>
+                <div class="foto"><img src="/imgtopicoscarousel/cambio aut.png" alt="img" draggable="false"></div>
                 <h2>Câmbio Automático</h2>
                 <span></span>
               </li>
               <li class="card border-0">
-                <div class="foto"><img src="imgtopicoscarousel/radiador.png" alt="img" draggable="false"></div>
+                <div class="foto"><img src="/imgtopicoscarousel/radiador.png" alt="img" draggable="false"></div>
                 <h2>Radiador</h2>
                 <span></span>
               </li>
               <li class="card border-0">
-                <div class="foto"><img src="imgtopicoscarousel/vibrabrequim.png" alt="img" draggable="false"></div>
+                <div class="foto"><img src="/imgtopicoscarousel/vibrabrequim.png" alt="img" draggable="false"></div>
                 <h2>Virabrequim</h2>
                 <span></span>
               </li>
               <li class="card border-0">
-                <div class="foto"><img src="imgtopicoscarousel/volante.png" alt="img" draggable="false"></div>
+                <div class="foto"><img src="/imgtopicoscarousel/volante.png" alt="img" draggable="false"></div>
                 <h2>Volante</h2>
                 <span></span>
               </li>
               <li class="card border-0">
-                <div class="foto"><img src="imgtopicoscarousel/amortecedor.png" alt="img" draggable="false"></div>
+                <div class="foto"><img src="/imgtopicoscarousel/amortecedor.png" alt="img" draggable="false"></div>
                 <h2>Amortecedor</h2>
                 <span></span>
               </li>
               <li class="card border-0">
-                <div class="foto"><img src="imgtopicoscarousel/pastilha de freio.png" alt="img" draggable="false"></div>
+                <div class="foto"><img src="/imgtopicoscarousel/pastilha de freio.png" alt="img" draggable="false">
+                </div>
                 <h2>Pastilha de Freio</h2>
                 <span></span>
               </li>
               <li class="card border-0">
-                <div class="foto"><img src="imgtopicoscarousel/farol.png" alt="img" draggable="false"></div>
+                <div class="foto"><img src="/imgtopicoscarousel/farol.png" alt="img" draggable="false"></div>
                 <h2>Farol</h2>
                 <span></span>
               </li>
               <li class="card border-0">
-                <div class="foto"><img src="imgtopicoscarousel/embreagem.png" alt="img" draggable="false"></div>
+                <div class="foto"><img src="/imgtopicoscarousel/embreagem.png" alt="img" draggable="false"></div>
                 <h2>Embreagem</h2>
                 <span></span>
               </li>
               <li class="card border-0">
-                <div class="foto"><img src="imgtopicoscarousel/bomba de combustível.png" alt="img" draggable="false">
+                <div class="foto"><img src="/imgtopicoscarousel/bomba de combustível.png" alt="img" draggable="false">
                 </div>
                 <h2>Bomba de Combustível</h2>
                 <span></span>
               </li>
               <li class="card border-0">
-                <div class="foto"><img src="imgtopicoscarousel/vela.png" alt="img" draggable="false"></div>
+                <div class="foto"><img src="/imgtopicoscarousel/vela.png" alt="img" draggable="false"></div>
                 <h2>Vela</h2>
                 <span></span>
               </li>
@@ -138,13 +143,13 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="imagem carousel/banner one.jpg" class="d-block w-100" alt="...">
+                <img src="/imagem carousel/banner one.jpg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="imagem carousel/banner two.jpg" class="d-block w-100" alt="...">
+                <img src="/imagem carousel/banner two.jpg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="imagem carousel/banner tree.jpg" class="d-block w-100" alt="...">
+                <img src="/imagem carousel/banner tree.jpg" class="d-block w-100" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -170,8 +175,8 @@
           <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
             <div class="col hp">
               <div class="card h-100 shadow-sm">
-                <a target="_blank" href="arruela.html">
-                  <img src="imgtopicoscarousel/7.webp" class="card-img-top" alt="product.title" />
+                <a target="_blank" href="/html/bateriaproduto.html">
+                  <img src="/imgtopicoscarousel/7.webp" class="card-img-top" alt="product.title" />
                 </a>
 
                 <div class="label-top shadow-sm">
@@ -191,7 +196,7 @@
 
                   <div class="d-grid gap-2 my-4">
 
-                    <a href="carrinho.html" class="btn btn-warning bold-btn">Adicionar ao Carrinho</a>
+                    <a href="/html/carrinho.html" class="btn btn-warning bold-btn">Adicionar ao Carrinho</a>
 
                   </div>
                   <div class="clearfix">
@@ -208,7 +213,7 @@
             <div class="col hp">
               <div class="card h-100 shadow-sm">
                 <a href="https://amzn.to/42dsdGC" target="_blank">
-                  <img src="imgprodutos/escapamento.png" class="card-img-top" alt="product.title" />
+                  <img src="/imgprodutos/escapamento.png" class="card-img-top" alt="product.title" />
                 </a>
 
                 <div class="shadow-sm">
@@ -245,7 +250,7 @@
             <div class="col hp">
               <div class="card h-100 shadow-sm">
                 <a href="https://amzn.to/3os2Nrc" target="_blank">
-                  <img src="imgprodutos/filtro de ar.png" class="card-img-top" alt="product.title" />
+                  <img src="/imgprodutos/filtro de ar.png" class="card-img-top" alt="product.title" />
                 </a>
 
                 <div class="label-top shadow-sm">
@@ -284,7 +289,7 @@
             <div class="col hp">
               <div class="card h-100 shadow-sm">
                 <a href="https://amzn.to/3os2Nrc" target="_blank">
-                  <img src="imgprodutos/kit de ferramentas.png" class="card-img-top" alt="product.title" />
+                  <img src="/imgprodutos/kit de ferramentas.png" class="card-img-top" alt="product.title" />
                 </a>
 
                 <div class="shadow-sm">
@@ -322,7 +327,7 @@
             <div class="col hp">
               <div class="card h-100 shadow-sm">
                 <a href="https://amzn.to/3os2Nrc" target="_blank">
-                  <img src="imgprodutos/kit peças 420 uni.png" class="card-img-top" alt="product.title" />
+                  <img src="/imgprodutos/kit peças 420 uni.png" class="card-img-top" alt="product.title" />
                 </a>
 
                 <div class="shadow-sm">
@@ -359,7 +364,7 @@
             <div class="col hp">
               <div class="card h-100 shadow-sm">
                 <a href="https://amzn.to/3os2Nrc" target="_blank">
-                  <img src="imgprodutos/painel.png" class="card-img-top" alt="product.title" />
+                  <img src="/imgprodutos/painel.png" class="card-img-top" alt="product.title" />
                 </a>
 
                 <div class="label-top shadow-sm">
@@ -396,7 +401,7 @@
             <div class="col hp">
               <div class="card h-100 shadow-sm">
                 <a href="https://amzn.to/3os2Nrc" target="_blank">
-                  <img src="imgprodutos/bateria.png" class="card-img-top" alt="product.title" />
+                  <img src="/imgprodutos/bateria.png" class="card-img-top" alt="product.title" />
                 </a>
 
                 <div class="shadow-sm">
@@ -432,7 +437,7 @@
             <div class="col hp">
               <div class="card h-100 shadow-sm">
                 <a href="https://amzn.to/3os2Nrc" target="_blank">
-                  <img src="imgprodutos/correia dentada.png" class="card-img-top" alt="product.title" />
+                  <img src="/imgprodutos/correia dentada.png" class="card-img-top" alt="product.title" />
                 </a>
 
                 <div class="shadow-sm">
@@ -468,7 +473,7 @@
             <div class="col hp">
               <div class="card h-100 shadow-sm">
                 <a href="https://amzn.to/3os2Nrc" target="_blank">
-                  <img src="imgprodutos/farol.png" class="card-img-top" alt="product.title" />
+                  <img src="/imgprodutos/farol.png" class="card-img-top" alt="product.title" />
                 </a>
 
                 <div class="label-top shadow-sm">
@@ -506,7 +511,7 @@
             <div class="col hp">
               <div class="card h-100 shadow-sm">
                 <a href="https://amzn.to/3os2Nrc" target="_blank">
-                  <img src="imgprodutos/pistao.png" class="card-img-top" alt="product.title" />
+                  <img src="/imgprodutos/pistao.png" class="card-img-top" alt="product.title" />
                 </a>
 
                 <div class="shadow-sm">
@@ -543,7 +548,7 @@
             <div class="col hp">
               <div class="card h-100 shadow-sm">
                 <a href="https://amzn.to/3os2Nrc" target="_blank">
-                  <img src="imgprodutos/pneu.png" class="card-img-top" alt="product.title" />
+                  <img src="/imgprodutos/pneu.png" class="card-img-top" alt="product.title" />
                 </a>
 
                 <div class="shadow-sm">
@@ -579,7 +584,7 @@
             <div class="col hp">
               <div class="card h-100 shadow-sm">
                 <a href="https://amzn.to/43tMNDW" target="_blank">
-                  <img src="imgprodutos/retrovisor.png" class="card-img-top" alt="product.title" />
+                  <img src="/imgprodutos/retrovisor.png" class="card-img-top" alt="product.title" />
                 </a>
 
                 <div class="label-top shadow-sm">
@@ -617,19 +622,6 @@
           </div>
         </div>
 
-        <!-- <div class="small text-muted my-4">Images by <a target="_blank" href="https://www.amazon.com/">Amazon</a></div> -->
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -637,7 +629,6 @@
 
 
       </main>
-      <!-- <aside></aside> -->
     </div>
   </div>
 
@@ -696,7 +687,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+  <script src="/js/script.js"></script>
 </body>
 
 </html>

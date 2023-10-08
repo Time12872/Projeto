@@ -39,8 +39,8 @@ section, aside {
 main {
   flex-grow: 1;
   background-color: rgba(199, 198, 198, 0.274);
-  padding: 30px;
 }
+
 
 section {
   
@@ -50,6 +50,8 @@ aside {
   
 }
 
+/*footer*/
+
 /* Footer */
 footer {
   background-color: #242526;
@@ -57,34 +59,27 @@ footer {
   height: auto;
   width: 100%;
   padding: 50px 100px;
-  display: flex;
-  /* Alterado para flexbox */
-  flex-direction: column;
-  /* Empilhamento vertical dos elementos */
-  align-items: center;
-  /* Alinhar os elementos horizontalmente */
-  justify-content: center;
-  /* Alinhar os elementos verticalmente */
+  display: flex; /* Alterado para flexbox */
+  flex-direction: column; /* Empilhamento vertical dos elementos */
+  align-items: center; /* Alinhar os elementos horizontalmente */
+  justify-content: center; /* Alinhar os elementos verticalmente */
 }
 
 footer .container {
   max-width: 1300px;
   width: 100%;
-  display: flex;
-  /* Alterado para flexbox */
-  justify-content: space-between;
-  /* Espaço uniforme entre os elementos */
-  gap: 20px;
-  /* Espaçamento entre os elementos */
-  flex-wrap: wrap;
-  /* Envolve os elementos quando a tela é estreita */
+  display: flex; /* Alterado para flexbox */
+  justify-content: space-between; /* Espaço uniforme entre os elementos */
+  gap: 20px; /* Espaçamento entre os elementos */
+  flex-wrap: wrap; /* Envolve os elementos quando a tela é estreita */
 }
 
-footer .container .sec h2 {
+footer .container .sec .h2-footer {
   position: relative;
-  color: rgb(255, 255, 255);
+  color: white;
   font-weight: 600;
   margin-bottom: 15px;
+  font-size: 1.5rem;
 }
 
 footer .container .sec p {
@@ -93,10 +88,8 @@ footer .container .sec p {
 
 footer .container .sci {
   margin-top: 20px;
-  display: flex;
-  /* Alterado para flexbox */
-  gap: 20px;
-  /* Espaçamento entre os elementos */
+  display: flex; /* Alterado para flexbox */
+  gap: 20px; /* Espaçamento entre os elementos */
 }
 
 footer .container .sci li {
@@ -104,12 +97,9 @@ footer .container .sci li {
 }
 
 footer .container .sci li a {
-  display: flex;
-  /* Alterado para flexbox */
-  align-items: center;
-  /* Alinhar o conteúdo verticalmente */
-  justify-content: center;
-  /* Alinhar o conteúdo horizontalmente */
+  display: flex; /* Alterado para flexbox */
+  align-items: center; /* Alinhar o conteúdo verticalmente */
+  justify-content: center; /* Alinhar o conteúdo horizontalmente */
   width: 36px;
   height: 36px;
   background-color: #fff;
@@ -141,17 +131,14 @@ footer .container .quicklinks ul li a {
   display: inline-block;
 }
 
-footer .container .contact .info {
+footer .container .contact .info{
   position: relative;
 }
 
 footer .container .contact .info li {
-  display: flex;
-  /* Alterado para flexbox */
-  gap: 20px;
-  /* Espaçamento entre os elementos */
-  align-items: center;
-  /* Alinhar o conteúdo verticalmente */
+  display: flex; /* Alterado para flexbox */
+  gap: 20px; /* Espaçamento entre os elementos */
+  align-items: center; /* Alinhar o conteúdo verticalmente */
   margin-bottom: 16px;
 }
 
@@ -174,7 +161,6 @@ footer .container .contact .info li a {
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
-
 @media (max-width: 991px) {
   footer {
     padding: 40px;
@@ -182,19 +168,15 @@ footer .container .contact .info li a {
 
   footer .container {
     width: 100%;
-    display: flex;
-    /* Alterado para flexbox */
-    justify-content: space-between;
-    /* Espaço uniforme entre os elementos */
-    gap: 20px;
-    /* Espaçamento entre os elementos */
-    flex-wrap: wrap;
-    /* Envolve os elementos quando a tela é estreita */
+    display: flex; /* Alterado para flexbox */
+    justify-content: space-between; /* Espaço uniforme entre os elementos */
+    gap: 20px; /* Espaçamento entre os elementos */
+    flex-wrap: wrap; /* Envolve os elementos quando a tela é estreita */
   }
 
   .copyrightText {
     padding: 20px 40px 30px;
-  }
+  } 
 }
 
 
@@ -203,59 +185,30 @@ footer .container .contact .info li a {
 @media (max-width: 450px) {
   .conteudo {
     flex-direction: column;
-    margin-top: 0;
+    margin-top: 0; 
   }
-
   main {
     order: -1;
-    padding-top: 70px;
-    text-align: center;
   }
-
-  .linha{
-    margin-bottom: -20px;
-  }
-
-  #linhajr{
-    margin-bottom: -60px;
-  }
-
-  .quadro{
-    margin-top: -60px;
-  }
-
   aside {
     flex-basis: 100px;
   }
-
-  footer .container {
-    width: 100%;
-    display: flex;
-    /* Alterado para flexbox */
-    justify-content: center;
-    /* Centraliza os elementos horizontalmente */
-    flex-direction: column;
-    gap: 20px;
-    /* Espaçamento entre os elementos */
-    flex-wrap: wrap;
-    /* Envolve os elementos quando a tela é estreita */
-  }
-
-}
-  .caixa
+  footer .container 
   {
-    margin-top: 60px;
+    width: 100%;
+    display: flex; /* Alterado para flexbox */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    flex-direction: column;
+    gap: 20px; /* Espaçamento entre os elementos */
+    flex-wrap: wrap; /* Envolve os elementos quando a tela é estreita */
+  }
+  .quadro
+  {
+    margin-top: 50px;
     padding: 10px;
   }
 
-  .aga1{
-    margin-top: 0;
-    margin-bottom: 15px;
-  }
-
-
-
-
+}
 
 nav{
   position: fixed;
@@ -680,7 +633,7 @@ button {
 
 button:hover {
   background-color: #23c483;
-  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
   transform: translateY(-7px);
 }
@@ -690,277 +643,22 @@ button:active {
 }
 
 
-.product-image {
-    float: left;
-    width: 20%;
-  }
-  
-  .product-details {
-    float: left;
-    width: 37%;
-  }
-  
-  .product-price {
-    float: left;
-    width: 12%;
-  }
-  
-  .product-quantity {
-    float: left;
-    width: 10%;
-  }
-  
-  .product-removal {
-    float: left;
-    width: 9%;
-  }
-  
-  .product-line-price {
-    float: left;
-    width: 12%;
-    text-align: right;
-  }
-  
-  /* This is used as the traditional .clearfix class */
-  .group:before, .shopping-cart:before, .column-labels:before, .product:before, .totals-item:before,
-  .group:after,
-  .shopping-cart:after,
-  .column-labels:after,
-  .product:after,
-  .totals-item:after {
-    content: '';
-    display: table;
-  }
-  
-  .group:after, .shopping-cart:after, .column-labels:after, .product:after, .totals-item:after {
-    clear: both;
-  }
-  
-  .group, .shopping-cart, .column-labels, .product, .totals-item {
-    zoom: 1;
-  }
-  
-  /* Apply clearfix in a few places */
-  /* Apply dollar signs */
-  .product .product-price:before, .product .product-line-price:before, .totals-value:before {
-    content: '$';
-  }
-  
+.logo{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
 
-  
-  .aga1 {
-    font-weight: 900;
+@media (max-width: 450px){
+  .logo{
+    width: 200px;
+    margin-left: -2vh;
+    /* background-color: white;
+    border-radius: 50; */
   }
-  
-  label {
-    color: #000000;
-    font-weight: 900;
-  }
-  
-  .shopping-cart {
-    margin-top: -45px;
-  }
-  
-  /* Column headers */
-  .column-labels label {
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-    border-bottom: 1px solid #000000;
-  }
-  .column-labels .product-image, .column-labels .product-details, .column-labels .product-removal {
-    text-indent: -9999px;
-  }
-  
-  /* Product entries */
-  .product {
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #000000;
-  }
-  .product .product-image {
-    text-align: center;
-  }
-  .product .product-image img {
-    width: 100px;
-  }
-  .product .product-details .product-title {
-    margin-right: 20px;
-    font-size: 2rem;
-    font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
-  }
-  .product .product-details .product-description {
-    margin: 5px 20px 5px 0;
-    line-height: 1.4em;
-  }
-  .product .product-quantity input {
-    width: 40px;
-  }
-  .product .remove-product {
-    border: 0;
-    padding: 5px;
-    background-color: #fd0000c4;
-    color: #fff;
-    font-weight: 600;
-    font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
-    font-size: 20px;
-    border-radius: 3px;
-  }
-  .product .remove-product:hover {
-    background-color: #e60023;
-    box-shadow: 10px 10px 5px rgba(117, 117, 117, 0.459);
-  }
-  
-  /* Totals section */
-  .totals .totals-item {
-    float: right;
-    clear: both;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .totals .totals-item label {
-    float: left;
-    clear: both;
-    width: 79%;
-    text-align: right;
-  }
-  .totals .totals-item .totals-value {
-    float: right;
-    width: 21%;
-    text-align: right;
-  }
-  .totals .totals-item-total {
-    font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
-  }
-  
-  .checkout {
-    float: right;
-    border: 1px solid black;
-    margin-top: 20px;
-    padding: 6px 25px;
-    background-color: black;
-    color: #f2f2f2;
-    font-size: 25px;
-    font-weight: 500;
-    border-radius: 5px;
-  }
-  
-  .checkout:hover {
-    background: linear-gradient(180deg, white, rgba(0, 0, 0, 0.397));
-    color: #000000;
-    font-weight: 500;
-  }
-  
-  /* Make adjustments for tablet */
-  @media screen and (max-width: 650px) {
-    .shopping-cart {
-      margin: 0;
-      padding-top: 20px;
-      border-top: 1px solid #000000;
-    }
-  
-    .column-labels {
-      display: none;
-    }
-  
-    .product-image {
-      float: right;
-      width: auto;
-    }
-    .product-image img {
-      margin: 0 0 10px 10px;
-    }
-  
-    .product-details {
-      float: none;
-      margin-bottom: 10px;
-      width: auto;
-    }
-  
-    .product-price {
-      clear: both;
-      width: 70px;
-    }
-  
-    .product-quantity {
-      width: 100px;
-    }
-    .product-quantity input {
-      margin-left: 20px;
-    }
-  
-    .product-quantity:before {
-      content: 'x';
-    }
-  
-    .product-removal {
-      width: auto;
-    }
-  
-    .product-line-price {
-      float: right;
-      width: 70px;
-    }
-  }
-  /* Make more adjustments for phone */
-  @media screen and (max-width: 350px) {
-    .product-removal {
-      float: right;
-    }
-  
-    .product-line-price {
-      float: right;
-      clear: left;
-      width: auto;
-      margin-top: 10px;
-    }
-  
-    .product .product-line-price:before {
-      content: 'Item Total: $';
-    }
-  
-    .totals .totals-item label {
-      width: 60%;
-    }
-    .totals .totals-item .totals-value {
-      width: 40%;
-    }
-  }
-  .codes{
-    bottom: 5%;
-    left: 5%;
-    position: fixed;
-  }
-  .codes div {
-    border: 2px solid black;
-    font-size: 20px;
-    padding: 10px;
-    background-color: red;
-  }
-  .codes div a{
-    text-decoration: none;
-    color: white;
-    font-weight: 800;
-  }
+}
 
-  .caixa{
-    width: auto;
-    height: auto;
-    background-color: white;
-    padding: 30px;
-    box-shadow: 10px 10px 40px;
-    border-radius: 15px;
-  }
-
-  .logo img{
-    width: 13vh;
-    height: auto;
-    margin-top: 9vh;
-  }
-  
-  @media (max-width: 450px){
-    .logo img{
-      width: 30vh;
-      margin-left: -2vh;
-      margin-top: 12vh;
-    }
-  }
+.imglogo{
+  width: 100px;
+  height: 100px;
+}

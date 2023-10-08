@@ -843,16 +843,17 @@ input[type="radio"] {
   }
 }
 
-.logo img{
-  width: 13vh;
-  height: auto;
-  margin-top: 9vh;
+.logo{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
 }
 
 @media (max-width: 450px){
-  .logo img{
-    width: 30vh;
+  .logo{
+    width: 200px;
     margin-left: -2vh;
-    margin-top: 12vh;
+    /* background-color: white;
+    border-radius: 50; */
   }
 }

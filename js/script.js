@@ -88,3 +88,36 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 embrulho.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 embrulho.addEventListener("mouseleave", autoPlay);
+
+
+// Selecionar todos os elementos com o atributo data-tooltip
+const tooltips = document.querySelectorAll('[data-tooltip]');
+
+tooltips.forEach((tooltip) => {
+  // Adicionar evento de mouseover para mostrar o tooltip
+  tooltip.addEventListener('mouseover', () => {
+    const text = tooltip.getAttribute('data-tooltip');
+    const tooltipElement = document.createElement('div');
+    tooltipElement.className = 'tooltip';
+    tooltipElement.textContent = text;
+    document.body.appendChild(tooltipElement);
+
+    // Posicionar o tooltip ao lado do ícone
+    const iconRect = tooltip.getBoundingClientRect();
+    const tooltipRect = tooltipElement.getBoundingClientRect();
+
+    const top = iconRect.top - tooltipRect.height - 10;
+    const left = iconRect.left + (iconRect.width - tooltipRect.width) / 2;
+
+    tooltipElement.style.top = `${top}px`;
+    tooltipElement.style.left = `${left}px`;
+  });
+
+  // Adicionar evento de mouseout para ocultar o tooltip
+  tooltip.addEventListener('mouseout', () => {
+    const tooltipElement = document.querySelector('.tooltip');
+    if (tooltipElement) {
+      tooltipElement.remove();
+    }
+  });
+});
