@@ -4,29 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/esqueceusenha.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
+  
     <div class="form-container">
-        <div class="logo-container">
-          Esqueceu a Senha
-        </div>
+      <div class="quadrinho">
+        <a href="/login/login.html"><i class="fa-solid fa-left-long fa-2xl" style="color: #000000;"></i></a>
+        <div class="logo-container"><p>Esqueceu a Senha</p></div>
+      </div>
+       <p id="sub">Para recuperar sua senha, insira seu:</p>
   
         <form class="form">
           <div class="form-group">
             <label class="label-input" for="">
-                <i class="far fa-envelope icon-modify"></i>
-                <input placeholder="Digite aqui seu email" type="text" class="input">
+              <i class="fa-solid fa-envelope fa-lg" style="color: #000000; margin-left: 6px;"></i>
+                <input placeholder="Email" type="text" class="input" style="margin-left: 6px;">
             </label>
 
-          <p><strong>ou</strong></p>
+          <p>ou</p>
 
           <label class="label-input" for="">
-            <i class="fas fa-phone icon-modify"></i>
-            <input placeholder="Digite aqui seu telefone" type="text" class="input">
+            <i class="fa-solid fa-phone fa-lg" style="color: #000000; margin-left: 6px;"></i>
+            <input placeholder="Cel" type="text" class="input" style="margin-left: 6px;">
         </label>
+        
   
         <button id="signin" class="btn btn-primary" onclick="window.location.href='codigo.html'">Enviar</button>
         </div>

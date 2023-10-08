@@ -837,7 +837,7 @@ button:active {
     border: 1px solid black;
     margin-top: 20px;
     padding: 6px 25px;
-    background-color: black;
+    background-color: 	#2E8B57;
     color: #f2f2f2;
     font-size: 25px;
     font-weight: 500;
@@ -845,8 +845,8 @@ button:active {
   }
   
   .checkout:hover {
-    background: linear-gradient(180deg, white, rgba(0, 0, 0, 0.397));
-    color: #000000;
+    background-color:#242526 ;
+    color: #fff;
     font-weight: 500;
   }
   
