@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   display: flex;
@@ -26,30 +33,27 @@ body {
     position: relative;
     text-align: center;
     color: black;
-    top: 3em;
     font-weight: bold;
+    margin-bottom: 15px;
   }
   
   .check {
     position: relative;
     align-self: center;
-    top: 4em;
   }
   
   .input {
+    text-align: center;
     position: relative;
-    width: 2.5em;
-    height: 2.5em;
-    margin: 1em;
+    width: 4em;
+    height: 4em;
+    margin: 0.3em;
     border-radius: 5px;
     border: none;
     outline: none;
     background-color: rgb(235, 235, 235);
-    box-shadow: inset 3px 3px 6px #d1d1d1,
-              inset -3px -3px 6px #ffffff;
-    top: 6.5em;
-    left: 1.5em;
-    padding-left: 15px;
+    box-shadow: inset 3px 3px 6px #9b9b9b,
+              inset -3px -3px 6px #9b9b9b;
     transition: .4s ease-in-out;
   }
   
@@ -64,31 +68,47 @@ body {
               inset 0px 0px 0px #ffffff;
     background-color: lightgrey;
   }
+
+  .box{
+    margin-top: 15px;
+  }
   
   .btn {
-    border-radius: 15px;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 10px;
-    padding: 10px 50px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #242526;
+    color: #fff; /* Cor da fonte branca */
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
     cursor: pointer;
     font-weight: bold;
-    width: 150px;
-    height: 42px;
-    align-self: center;
-    border: none;
-    background-color: #3498db;
-    border: 1px solid #fff;
-    transition: background-color .5s;
-    margin-top: 120px;
-}
-  .btn-primary:hover {
-    background-color: #fff;
-    color: #3498db; 
-    border: 1px solid black;
+    transition: background-color 0.3s;
+    width: 30%; /* Largura do botão, ajuste conforme necessário */
+    margin: 0 auto; /* Centralizar horizontalmente */
+    border: 1px solid #242526;
   }
-  .button-container {
-    display: flex;
-    justify-content: space-around; 
+  
+  .btn:hover {
+    background-color: #fff;
+    color: #242526;
+  }
+  
+  /* Estilo para links que se parecem com botões */
+  .btn-link {
     text-decoration: none;
-}
+    color: #fff; /* Cor da fonte branca */
+    margin-top: 20px;
+  }
+  
+  /* Estilo para links que se parecem com botões quando hover */
+  .btn-link:hover {
+    text-decoration: none;
+  }
+
+  @media (max-width: 450px){
+    .form{
+      width: 350px;
+    }
+  }

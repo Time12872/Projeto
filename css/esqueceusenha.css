@@ -17,10 +17,11 @@ body {
   background-color: rgba(199, 198, 198, 0.274);
 }
 
-.logo-container p{
-  color: #242526;
-  font-size: 25px;
-  font-weight: 700;
+.logo-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #sub{
@@ -53,8 +54,9 @@ body {
     scale: 0.95;
   }
 
-  .quadrinho{
-    display: inline-block;
+  .quadrinho {
+    display: flex;
+    align-items: center;
   }
   
   form p{
@@ -129,31 +131,6 @@ input:-webkit-autofill
     padding: 16px;
 }
   
-.btn {
-  border-radius: 15px;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 10px;
-  cursor: pointer;
-  font-weight: bold;
-  width: 150px;
-  height: 42px;
-  align-self: center;
-  border: none;
-  margin-top: 1rem;
-}
-.btn-primary {
-  background-color: #242526;
-  font-size: 15px;
-  border: 1px solid #fff;
-  transition: 0.5s;
-}
-.btn-primary:hover {
-  background-color: #fff;
-  color: #242526; 
-  border: 1px solid black;
-}
-  
   .form-container .link {
     color: #1778f2;
     text-decoration: none;
@@ -172,4 +149,37 @@ input:-webkit-autofill
     text-decoration: underline;
   }
   
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #242526;
+    color: #fff; /* Cor da fonte branca */
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 30%; /* Largura do botão, ajuste conforme necessário */
+    margin: 0 auto; /* Centralizar horizontalmente */
+    border: 1px solid #242526;
+  }
   
+  .btn:hover {
+    background-color: #fff;
+    color: #242526;
+  }
+  
+  /* Estilo para links que se parecem com botões */
+  .btn-link {
+    text-decoration: none;
+    color: #fff; /* Cor da fonte branca */
+  }
+  
+  /* Estilo para links que se parecem com botões quando hover */
+  .btn-link:hover {
+    text-decoration: none;
+  }
+    

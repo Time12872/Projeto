@@ -13,6 +13,11 @@ body{
     transition: 1s;
 }
 
+.icon-link {
+    margin-left: -100px; /* Ajuste a margem conforme necessário */
+    margin-right: 80px;
+  }
+
 .form-register{
     transform: translateX(-100%);
     z-index: -1;
@@ -45,3 +50,4 @@ body{
     }
 
 }
+
