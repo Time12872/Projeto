@@ -14,6 +14,7 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
+  background-color: rgba(199, 198, 198, 0.274);
 }
 
 .form {
@@ -109,6 +110,21 @@ body {
 
   @media (max-width: 450px){
     .form{
-      width: 350px;
+      width: 380px;
     }
+  }
+
+  .quadrinho {
+    display: flex;
+    align-items: center;
+  }
+
+  .icon-link {
+    margin-left: 10px; /* Ajuste a margem conforme necessário */
+    margin-right: -2px;
+  }
+
+  h2{
+    width: 90%;
+    text-align: center;
   }

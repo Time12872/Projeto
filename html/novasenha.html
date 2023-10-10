@@ -6,13 +6,21 @@
     <link rel="stylesheet" href="/css/novasenha.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
     <div class="form-container">
+      <div class="quadrinho">
+        <a href="/html/esqueceusenha.html" class="icon-link">
+          <i class="fa-solid fa-left-long fa-2xl" style="color: #000000;"></i>
+        </a>
         <div class="logo-container">
-          Esqueceu a Senha
+          <h2>Redefinir Senha</h2>
         </div>
+      </div>
     
     <form class="form">
         <div class="form-group">
@@ -28,7 +36,7 @@
           <input placeholder="Confirme sua nova senha" type="password" class="input" id="passwordField">
       </label>
 
-      <button id="signin" class="btn btn-primary"><a href="/html/login.html">Salvar</a></button>
+      <a href="/login/login.html" class="btn btn-link">Enviar</a>
       </div>
       </form>
       <script>

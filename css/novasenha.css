@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
 body {
   font-family: 'Open Sans', sans-serif;
   display: flex;
@@ -7,14 +16,11 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
-}
-
-.logo-container{
-  color: #3498db;
+  background-color: rgba(199, 198, 198, 0.274);
 }
 
 .form-container {
-    width: 350px;
+    width: 400px;
     background-color: #fff;
     padding: 32px 24px;
     font-size: 14px;
@@ -106,29 +112,43 @@ input:-webkit-autofill
 }
   
 .btn {
-  border-radius: 15px;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 10px;
-  padding: 10px 50px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #242526;
+  color: #fff; /* Cor da fonte branca */
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
   cursor: pointer;
   font-weight: bold;
-  width: 150px;
-  height: 42px;
-  align-self: center;
-  border: none;
-  margin-top: 1rem;
+  transition: background-color 0.3s;
+  width: 30%; /* Largura do botão, ajuste conforme necessário */
+  margin: 0 auto; /* Centralizar horizontalmente */
+  border: 1px solid #242526;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #242526;
+}
+
+/* Estilo para links que se parecem com botões */
+.btn-link {
+  text-decoration: none;
+  color: #fff; /* Cor da fonte branca */
+  margin-top: 20px;
+}
+
+/* Estilo para links que se parecem com botões quando hover */
+.btn-link:hover {
   text-decoration: none;
 }
-.btn-primary {
-  background-color: #3498db;
-  border: 1px solid #fff;
-  transition: background-color .5s;
-}
-.btn-primary:hover {
-  background-color: #fff;
-  color: #3498db; 
-  border: 1px solid black;
+
+@media (max-width: 450px){
+  .form-container{
+    width: 350px;
+  }
 }
   
   .form-container .link {
@@ -149,4 +169,17 @@ input:-webkit-autofill
     text-decoration: underline;
   }
   
-  
+  .quadrinho {
+    display: flex;
+    align-items: center;
+  }
+
+  .icon-link {
+    margin-left: -60px; /* Ajuste a margem conforme necessário */
+    margin-right: 40px;
+  }
+
+  h2{
+    width: 100%;
+    text-align: center;
+  }
